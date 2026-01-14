@@ -1,4 +1,5 @@
 import argparse
+import random   
 
 # I will be learning about the argparse 
 
@@ -33,3 +34,13 @@ import argparse
 
 
 # 🟡 Challenge 3 — EASY ➜ MEDIUM
+
+# parser = argparse.ArgumentParser(description="This parser is for addition of 2 numbers")
+# parser.add_argument("numbers", help="x value for addition", type=int, nargs='+' )
+# # parser.add_argument("y", help="y value for addition", type=int,)
+
+# # def addition(x,y):
+# #     return x+y
+# args = parser.parse_args()
+
+# print(f"Result: {sum(args.numbers)}")
