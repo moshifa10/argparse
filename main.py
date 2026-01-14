@@ -44,3 +44,26 @@ import random
 # args = parser.parse_args()
 
 # print(f"Result: {sum(args.numbers)}")
+
+
+# 🟡 Challenge 4 — MEDIUM (Flags)
+# parser = argparse.ArgumentParser(description="This parser is expected to reverse your text")
+# parser.add_argument("text",help="Your text")
+# parser.add_argument("--reverse", help="This flag reverses your text", action="store_true")
+
+# args = parser.parse_args()
+
+# if args.reverse:
+#     print(f"{args.text[::-1]}")
+# else:
+#     print(args.text)
+
+
+# 🔵 Challenge 5 — MEDIUM (Choices + Logic)
+parser = argparse.ArgumentParser(description="This one is all about choices")
+parser.add_argument("--score", help="Your score",required=True)
+parser.add_argument("--grade", help="Your grade A,B,C", required=True, choices=["A","B", "C"])
+
+args = parser.parse_args()
+
+print(f"Score: {args.score} | Grade {args.grade}")
